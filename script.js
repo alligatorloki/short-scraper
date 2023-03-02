@@ -36,7 +36,7 @@ const getByTitle= async (searchType,searchTerm)=>{
 }
 const getListByMovieTitle= async (searchTerm)=>{
     const url= "https://server-bookvie-tv.onrender.com/movie-search/?" + new URLSearchParams ({
-        query: searchTerm
+      searchTerm
     });
   const results = await fetch(url);
   return results;
